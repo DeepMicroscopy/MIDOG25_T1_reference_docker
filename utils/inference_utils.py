@@ -559,6 +559,7 @@ class DetectionAlgorithm:
                 ])
 
             # Create points and convert to native types
+            # If there are no detections in an image, points should be an empty list!
             points = [
                 {
                     "name": classnames[int(c[3])],
