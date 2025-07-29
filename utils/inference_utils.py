@@ -550,7 +550,7 @@ class DetectionAlgorithm:
                     world_coords = coord
 
                 # Expected syntax from evaluation container is:
-                # x-coordinate(centroid), y-coordinate(centroid),0, label, score
+                # x-coordinate(centroid), y-coordinate(centroid), 0, label, score
                 # where label should be 1 if score is above threshold and 0 else
                 candidates.append([
                     *tuple(world_coords), 0,
@@ -570,7 +570,7 @@ class DetectionAlgorithm:
                 # Create final output format
                 output_mitotic_figures = {
                     "name": "Points of interest",
-                    "type": "Mulitple points",
+                    "type": "Multiple points",
                     "points": points,
                     "version": {"major": 1, "minor": 0},
                 }
