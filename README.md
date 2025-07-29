@@ -25,6 +25,15 @@ Second, you need to clone this repository:
 git clone git@github.com:DeepMicroscopy/MIDOG25_T1_reference_docker.git
 ```
 
+Create a virtual environment to install all the dependencies and then download the weights for the reference algorithm if you want to run the docker container with the provided model. 
+```
+cd MIDOG25_T1_reference_docker
+python -m venv env
+source env/bin/activate
+pip install -r requirements.txt
+python download_weights.py
+```
+
 Optional: If you want to have GPU support for local testing, you want to install the [NVIDIA container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html)
 
 As stated by the grand-challenge team:
