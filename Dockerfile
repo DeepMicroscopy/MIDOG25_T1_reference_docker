@@ -12,6 +12,7 @@ WORKDIR /opt/app
 COPY --chown=user:user requirements.txt /opt/app/
 COPY --chown=user:user resources /opt/app/resources
 COPY --chown=user:user utils/ /opt/app/utils/
+COPY --chown=user:user inference.py /opt/app/
 
 # You can add any Python dependencies to requirements.txt
 RUN python -m pip install \
@@ -19,7 +20,5 @@ RUN python -m pip install \
     --no-cache-dir \
     --no-color \
     --requirement /opt/app/requirements.txt
-
-COPY --chown=user:user inference.py /opt/app/
 
 ENTRYPOINT ["python", "inference.py"]
