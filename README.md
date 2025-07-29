@@ -80,7 +80,7 @@ We encourage you to adapt this example to your needs and insert your mitosis det
 If you need a different base image to build your container (e.g., Tensorflow instead of Pytorch, or a different version), if you need additional libraries and to make sure that all source files (and weights) are copied to the docker container, you will have to adapt the [Dockerfile](Dockerfile) and the [requirements.txt](requirements.txt) file accordingly.
 
 Kindly refer to the image below to identify the relevant points:
-<img width="1299" alt="image" src="docs/dockerfile.png.png">
+<img width="1299" alt="image" src="docs/dockerfile.png">
 
 
 ## 4. Testing your container <a name="test"></a>
