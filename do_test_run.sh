@@ -78,7 +78,7 @@ run_docker_forward_pass() {
         --platform=linux/amd64 \
         --network none \
         --memory=16g \
-        --shm-size=16g \
+        --shm-size=8g \
         --gpus all \
         --volume "${INPUT_DIR}/${interface_dir}":/input:ro \
         --volume "${OUTPUT_DIR}/${interface_dir}":/output \
