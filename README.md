@@ -14,6 +14,7 @@ For reference, you may also want to read the blog post of grand-challange.org on
 3. [Packing your algorithm into a docker container image](#todocker)
 4. [Testing your container](#test)
 5. [Generating the bundle for uploading your algorithm](#export)
+6. [Creating an "Algorithm" on GrandChallenge and submitting your solution to the MIDOG Challenge](#submission)
 
 ## 1. Prerequisites <a name="prerequisites"></a>
 
@@ -91,7 +92,7 @@ To test your container, you should run `do_test_run.sh`. This will run the test 
 
 When your test run finishes successfully you can run the `do_save.sh` script to create a file that prepares your docker image for uploading it to grand-challenge.org. It will create file with the extension "tar.gz" that you need to upload to the challenge. 
 
-## 7. Creating an "Algorithm" on GrandChallenge and submitting your solution to the MIDOG Challenge
+## 6. Creating an "Algorithm" on GrandChallenge and submitting your solution to the MIDOG Challenge <a name="submission"></a>
 
 **Note: Submission to grand-challenge.org will open on August 15th.**
 
