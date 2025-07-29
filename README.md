@@ -85,12 +85,31 @@ Kindly refer to the image below to identify the relevant points:
 
 ## 4. Testing your container <a name="test"></a>
 
-To test your container, you should run `do_test_run.sh`. This will run the test image provided in the test folder through your model. It will check them against what you provide in `test/ouput/expected_output.json`. Be aware that you will need to adapt the `expected_ouput.json` to your own needs when you modify the algorithm.  
+To test your container, you should run `do_test_run.sh`. This will run the test image provided in the test folder through your model. It will check the result against what you provide in `test/ouput/expected_output.json`. Be aware that you will need to adapt the `expected_ouput.json` to your own expected results when you modify the algorithm.  
 
 ## 5. Generating the bundle for uploading your algorithm <a name="export"></a>
 
-When your test run finishes successfully you can run the `do_save.sh` script to create a file that prepares your docker image for uploading it to grand-challenge.org. It will create file with the extension "tar.gz" you you need to upload to the challenge. 
+When your test run finishes successfully you can run the `do_save.sh` script to create a file that prepares your docker image for uploading it to grand-challenge.org. It will create file with the extension "tar.gz" that you need to upload to the challenge. 
 
 ## 7. Creating an "Algorithm" on GrandChallenge and submitting your solution to the MIDOG Challenge
 
-Will follow soon. 
+**Note: Submission to grand-challenge.org will open on August 15th.**
+
+In order to submit your docker container, you first have to add an **Algorithm** entry for your docker container [here] https://midog2025.grand-challenge.org/evaluation/track-1-object-detection-preliminary-evaluation-phase/algorithms/create/.
+
+Please enter a name for the algorithm:
+
+<img width="1299" alt="create_algorithm" src="docs/create_algo.png">
+
+After saving, you can add your docker container (you can also overwrite your container here):
+
+<img width="1299" alt="create_algorithm" src="docs/container_images.png">
+
+Please note that it can take a while (several minutes) until the container becomes active. You can determine which one is active in the same dialog. 
+
+You can also try out your algorithm. Please note that you will require an image that has the DPI property set in order to use this function. You can use the image test/007.tiff provided as part of this container as test image (it contains mitotic figures).
+
+<img width="1299" alt="try_out_algorithm" src="docs/try_out_algo.png">
+
+
+Final submission to a phase will be updated soon!!!
