@@ -93,5 +93,40 @@ run_docker_forward_pass() {
 run_docker_forward_pass "interf0"
 
 
+# Path to the output and expected files
+OUTPUT_JSON="${OUTPUT_DIR}/interf0/mitotic-figures.json"
+EXPECTED_JSON="${OUTPUT_DIR}/expected_output.json"
+
+echo "=+= Comparing output with expected output..."
+
+python3 -c "
+import json
+import sys
+
+try:
+    with open('$OUTPUT_JSON', 'r') as f:
+        output_data = json.load(f)
+    
+    with open('$EXPECTED_JSON', 'r') as f:
+        expected_data = json.load(f)
+    
+    if output_data == expected_data:
+        print('=+= Output matches expected output!')
+        sys.exit(0)
+    else:
+        print('ERROR: Output does not match expected output.')
+        sys.exit(1)
+        
+except FileNotFoundError as e:
+    print(f'ERROR: File not found: {e}')
+    sys.exit(1)
+except json.JSONDecodeError as e:
+    print(f'ERROR: Invalid JSON: {e}')
+    sys.exit(1)
+except Exception as e:
+    print(f'ERROR: {e}')
+    sys.exit(1)
+"
+
 
 echo "=+= Save this image for uploading via ./do_save.sh"
