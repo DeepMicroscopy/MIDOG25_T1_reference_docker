@@ -558,22 +558,22 @@ class DetectionAlgorithm:
                     score
                 ])
 
-                # Create points and convert to native types
-                points = [
-                    {
-                        "name": classnames[int(c[3])],
-                        "point": [float(c[0]), float(c[1]), float(c[2])],
-                        "probability": float(c[4])
-                    } for c in candidates
-                ]
+            # Create points and convert to native types
+            points = [
+                {
+                    "name": classnames[int(c[3])],
+                    "point": [float(c[0]), float(c[1]), float(c[2])],
+                    "probability": float(c[4])
+                } for c in candidates
+            ]
 
-                # Create final output format
-                output_mitotic_figures = {
-                    "name": "Points of interest",
-                    "type": "Multiple points",
-                    "points": points,
-                    "version": {"major": 1, "minor": 0},
-                }
+            # Create final output format
+            output_mitotic_figures = {
+                "name": "Points of interest",
+                "type": "Multiple points",
+                "points": points,
+                "version": {"major": 1, "minor": 0},
+            }
 
             self.logger.info("Prediction completed successfully")
             return output_mitotic_figures
