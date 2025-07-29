@@ -55,6 +55,7 @@ def interf0_handler():
     sitk_image = load_image_file(location=INPUT_PATH / "images/histopathology-roi-cropout")
 
     # Read addtional resources, these can be included in the resources folder 
+    # Here, we load some config files 
     resource_dir = Path("/opt/app/resources")
     model_config = resource_dir / "model_config.yaml"
     inference_config = resource_dir / "inference_config.yaml"
@@ -67,7 +68,7 @@ def interf0_handler():
         inference_config=inference_config
     )
 
-    # Run inference 
+    # Run inference steps 
     output = detection.predict(sitk_image)
 
     # Save your output
