@@ -101,9 +101,13 @@ To test your container, you should run `do_test_run.sh`. This will run the test 
 
 When your test run finishes successfully you can run the `do_save.sh` script to create a file that prepares your docker image for uploading it to grand-challenge.org. It will create file with the extension "tar.gz" that you need to upload to the challenge. 
 
+
 ## 6. Creating an "Algorithm" on GrandChallenge and submitting your solution to the MIDOG Challenge <a name="submission"></a>
 
 **Note: Submission to grand-challenge.org will open on August 15th.**
+
+Please be reminded that only **verified users** will be able to submit to the challenge (as written [here](https://grand-challenge.org/documentation/making-a-challenge-submission/#submission-tips)). If you used an educational email address in the sign up process, this will be much quicker. You can find all information about the account verification [at this link](https://grand-challenge.org/documentation/verification/).
+
 
 In order to submit your docker container, you first have to add an **Algorithm** entry for your docker container [here] https://midog2025.grand-challenge.org/evaluation/track-1-object-detection-preliminary-evaluation-phase/algorithms/create/.
 
