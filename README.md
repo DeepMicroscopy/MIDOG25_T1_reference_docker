@@ -1,3 +1,5 @@
+![MIDOG 2025 Logo](https://github.com/user-attachments/assets/6e28b009-7dcb-4bc1-b463-8528e943f952)
+
 # MIDOG 2025 Track 1 Reference Algorithm Docker Image
 
 Credits: J. Ammeling, F. Wilm, K. Breininger, M. Aubreville
