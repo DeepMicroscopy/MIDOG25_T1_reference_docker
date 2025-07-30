@@ -2,7 +2,7 @@
 
 Credits: J. Ammeling, F. Wilm, K. Breininger, M. Aubreville
 
-Welcome to the MIDOG 2025 reference docker for track 1. This docker image contains a reference implementation of a Fully Convolutional One-Stage Object Detection model (FCOS) based on the Torchvision implementation, provided by Jonas Ammeling (Technische Hochschule Ingolstadt, Germany) for the MIDOG 2025 challenge. 
+Welcome to the MIDOG 2025 reference docker for track 1. This docker image contains a reference implementation of a Fully Convolutional One-Stage Object Detection model (FCOS) based on the [Torchvision implementation](https://github.com/jonas-amme/FCOS_Inference_CLI), provided by Jonas Ammeling (Technische Hochschule Ingolstadt, Germany) for the MIDOG 2025 challenge. 
 
 The container shall serve as an example how we (and the grand-challenge plattform) expect the outputs to look like. At the same time, it serves as a template for you to implement your own algorithm for submission to MIDOG 2025. 
 
