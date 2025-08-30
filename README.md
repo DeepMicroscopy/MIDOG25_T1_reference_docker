@@ -123,9 +123,10 @@ After saving, you can add your docker container (you can also overwrite your con
 
 Please note that it can take a while (several minutes) until the container becomes active. You can determine which one is active in the same dialog. 
 
-You can also try out your algorithm. Please note that you will require an image that has the DPI property set in order to use this function. You can use the image test/007.tiff provided as part of this container as test image (it contains mitotic figures).
+Please first try out your algorithm. For this, note that you will require an image that has the DPI property set in order to use this function. You can use the image test/007.tiff provided as part of this container as test image (it contains mitotic figures).
 
 <img width="1299" alt="try_out_algorithm" src="docs/try_out_algo.png">
 
+## Final submission ##
 
-Final submission to a phase will be updated soon!!!
+The final submission has a more than 18x larger dataset, and hence we want to avoid submissions to the test set that did not pass the preliminary evaluation set. It is thus mandatory to run your container on the preliminary evaluation set first, and, upon successful evaluation you can submit to the final test set.
